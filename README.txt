@@ -61,9 +61,12 @@ similar. Windows users are on your own (not any more => see below). Good luck wi
   - Add the path to curl bin dir (C:\curl-7.21.4-devel-mingw32\bin) to your Path environment variable.
   - Test curl: 
        Open a console and try the command : curl -V
-  
+
 = INSALL patron
-   gem install patron -- --with-curl-lib="C:/curl-7.21.4-devel-mingw32/lib" --with-curl-include="C:/curl-7.21.4-devel-mingw32/include"
-    
+   - Download the source of this gem
+   - Build the gem: 
+     gem build patron.gemspec
+  - Install the gem: 
+    gem install patron-0.4.12.gem -- --with-curl-lib="C:/curl-7.21.4-devel-mingw32/lib" --with-curl-include="C:/curl-7.21.4-devel-mingw32/include"  
 
 Copyright (c) 2008 The Hive
